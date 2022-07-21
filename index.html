@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<body>
+<title>Dungeons and Dragons Survery Form for freeCodeCamp project.</title>
+</head>
+<h1 id="title">Dungeon Master Survey Form</h1>
+  <p id="description">How well is your DM doing?</p>
+<form id="survey-form"> Thank you for Completing This Form.
+<h2>
+<label id="name-label">Character Name
+<input id="name" type="text" placeholder="Enter your character name" required></input></label></h2>
+<h2><label id="email-label">Email
+<input id="email" type="email" placeholder="Enter your Email" required></input></label></h2>
+<h2><label id="number-label">Party Size?<input type="number" id="number" max="20" min="1" placeholder="5"></input></label></h2>
+<h2><label for="role">Which Classic Role do you Play?:</label></h2>
+<select id="dropdown" name="role" value="number" required>
+  <option value="rogue">Rogue</option>
+  <option value="wizard">Wizard</option>
+  <option value="fighter">Fighter</option>
+  <option value="barbarian">Barbarian</option>
+  <option value="cleric">Cleric</option>
+</select>
+
+<fieldset>
+<Legend><h3>What are you feelings on the last session?</h2></legend>
+  <div><input type="radio" id="1" name="Enjoyment" value="trash"><label for="1">Trash</label></input></div>
+  <div><input type="radio" id="2-3" name="Enjoyment" value="Meh"><label for="2-3">Meh</label></input></div>
+  <div><input type="radio" id="4-6" name="Enjoyment" value="Decent"><label for="4-6">Decent</label></input></div>
+  <div><input type="radio" id="6-9" name="Enjoyment" value="Good"><label for="7-9">Good</label></input></div>
+  <div><input type="radio" id="10" name="Enjoyment" value="Extraordinary"><label for="10">Extraordinary</label></input></div>
+  </fieldset>
+
+  <h2>What would you like to see more of? (check all that apply)</h2>
+<input id="monsters" type="checkbox" name="want" value="monsters"/> <label>monsters
+<input id="gold" type="checkbox" name="want" value="gold"/> gold
+<input id="loot" type="checkbox" name="want" value="loots"/> loot
+<input id="story" type="checkbox" name="want" value="story"/> story
+<input id="ale" type="checkbox" name="want" value="ale"/> ale
+<input id="dungeons" type="checkbox" name="want" value="dungeons"/> dungeons
+<input id="NPCs" type="checkbox" name="want" value="NPCs"/> NPCs
+<input id="shopping" type="checkbox" name="want" value="shopping"/> shopping
+<input id="exploring" type="checkbox" name="want" value="exporing"/> exploring
+<input id="puzzles" type="checkbox" name="want" value="puzzles"/> puzzles</label>
+
+<h2>Any Comments or Suggestions?</h2>
+<textarea id="comments" name="comments" rows="4" cols="75"></textarea>
+
+<h2>
+<button id="submit" type="submit"> Submit </button></h2>
+</form>
+</body>
+</html>
